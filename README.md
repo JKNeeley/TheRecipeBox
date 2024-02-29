@@ -103,24 +103,35 @@ CI/CD pipelines, configured using GitHub Actions, will automate the process of b
 - Efficient client-server communication and optimized database queries contribute to overall system performance and responsiveness.
 ### Algorithms/API’s
 #### Security
-- OAuth 2.0/OpenID Connect: OAuth 2.0 is a widely adopted authorization framework that allows users to grant third-party applications limited access to their resources without sharing their credentials. OpenID Connect (OIDC) is an authentication layer built on top of OAuth 2.0, providing additional features for authentication. Integrate with OAuth 2.0/OIDC providers like Google, Facebook, GitHub, or enterprise identity providers.
-- HTTPS Protocol: Encrypt communication between clients and servers using HTTPS to prevent eavesdropping and man-in-the-middle attacks. Obtain SSL certificates from Certificate Authorities like Let's Encrypt or commercial providers.
-- Rate Limiting and Brute-Force Protection: Implement rate-limiting mechanisms to prevent brute-force attacks on login endpoints. Tools like Spring Security's rate-limiting features or middleware such as Express Rate Limit can help mitigate these risks.
-- Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) Protection: Employ techniques like input validation, output encoding, and CSRF tokens to mitigate XSS and CSRF attacks. Frameworks like React have built-in protections against XSS through JSX escaping.
+OAuth 2.0/OpenID Connect: OAuth 2.0 is a widely adopted authorization framework that allows users to grant third-party applications limited access to their resources without sharing their credentials. OpenID Connect (OIDC) is an authentication layer built on top of OAuth 2.0, providing additional features for authentication. Integrate with OAuth 2.0/OIDC providers like Google, Facebook, GitHub, or enterprise identity providers.
+
+HTTPS Protocol: Encrypt communication between clients and servers using HTTPS to prevent eavesdropping and man-in-the-middle attacks. Obtain SSL certificates from Certificate Authorities like Let's Encrypt or commercial providers.
+
+Rate Limiting and Brute-Force Protection: Implement rate-limiting mechanisms to prevent brute-force attacks on login endpoints. Tools like Spring Security's rate-limiting features or middleware such as Express Rate Limit can help mitigate these risks.
+
+Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) Protection: Employ techniques like input validation, output encoding, and CSRF tokens to mitigate XSS and CSRF attacks. Frameworks like React have built-in protections against XSS through JSX escaping.
 #### Parsing Recipe Information from Web Pages
-- HTML Parsing Algorithms: Utilize libraries like Jsoup to parse HTML content and extract relevant recipe information based on HTML structure, tags, and attributes.
-- Natural Language Processing (NLP) Algorithms: Apply NLP techniques like Named Entity Recognition (NER) and part-of-speech tagging to identify and extract recipe components such as ingredients, instructions, cooking time, servings, etc., from textual content.
-- Machine Learning Algorithms: Train machine learning models to recognize patterns in recipe web pages and extract structured data. Techniques such as supervised learning with labeled data or unsupervised learning for clustering similar content can be employed.
+HTML Parsing Algorithms: Utilize libraries like Jsoup to parse HTML content and extract relevant recipe information based on HTML structure, tags, and attributes.
+
+Natural Language Processing (NLP) Algorithms: Apply NLP techniques like Named Entity Recognition (NER) and part-of-speech tagging to identify and extract recipe components such as ingredients, instructions, cooking time, servings, etc., from textual content.
+
+Machine Learning Algorithms: Train machine learning models to recognize patterns in recipe web pages and extract structured data. Techniques such as supervised learning with labeled data or unsupervised learning for clustering similar content can be employed.
 #### Implementing Search Functionalities
-- Keyword Matching Algorithms: Implement simple keyword-based search algorithms to match user queries with recipe titles, ingredients, or tags.
-- TF-IDF (Term Frequency-Inverse Document Frequency): Calculate the TF-IDF scores for words in recipes to determine their relevance to user queries. This algorithm helps prioritize search results based on the frequency of terms in recipes compared to their occurrence across the entire recipe database.
-- Vector Space Model: Represent recipes and user queries as vectors in a high-dimensional space and calculate similarities using techniques like cosine similarity. This allows for more nuanced matching beyond simple keyword matching.
-- Latent Semantic Indexing (LSI): Apply LSI to identify latent topics within recipe data and improve search accuracy by considering semantic similarities between queries and recipes.
+Keyword Matching Algorithms: Implement simple keyword-based search algorithms to match user queries with recipe titles, ingredients, or tags.
+
+TF-IDF (Term Frequency-Inverse Document Frequency): Calculate the TF-IDF scores for words in recipes to determine their relevance to user queries. This algorithm helps prioritize search results based on the frequency of terms in recipes compared to their occurrence across the entire recipe database.
+
+Vector Space Model: Represent recipes and user queries as vectors in a high-dimensional space and calculate similarities using techniques like cosine similarity. This allows for more nuanced matching beyond simple keyword matching.
+
+Latent Semantic Indexing (LSI): Apply LSI to identify latent topics within recipe data and improve search accuracy by considering semantic similarities between queries and recipes.
 #### Recommendation Systems
-- Collaborative Filtering: Implement collaborative filtering algorithms such as user-based or item-based recommendation systems to suggest recipes based on user preferences and behavior. This approach leverages similarities between users or recipes to generate personalized recommendations.
-- Content-Based Filtering: Analyze recipe attributes such as ingredients, cuisine, cooking time, etc., to recommend similar recipes based on content similarity. This approach is useful for suggesting recipes based on user preferences and past interactions.
-- Hybrid Recommendation Systems: Combine collaborative filtering and content-based filtering approaches to leverage the strengths of both methods and provide more accurate and diverse recommendations.
-- Matrix Factorization Techniques: Use matrix factorization methods like Singular Value Decomposition (SVD) or Alternating Least Squares (ALS) to decompose user-item interaction matrices and uncover latent factors driving user preferences.
+Collaborative Filtering: Implement collaborative filtering algorithms such as user-based or item-based recommendation systems to suggest recipes based on user preferences and behavior. This approach leverages similarities between users or recipes to generate personalized recommendations.
+
+Content-Based Filtering: Analyze recipe attributes such as ingredients, cuisine, cooking time, etc., to recommend similar recipes based on content similarity. This approach is useful for suggesting recipes based on user preferences and past interactions.
+
+Hybrid Recommendation Systems: Combine collaborative filtering and content-based filtering approaches to leverage the strengths of both methods and provide more accurate and diverse recommendations.
+
+Matrix Factorization Techniques: Use matrix factorization methods like Singular Value Decomposition (SVD) or Alternating Least Squares (ALS) to decompose user-item interaction matrices and uncover latent factors driving user preferences.
 ### Data Storage
 #### Data Model
 ##### User
